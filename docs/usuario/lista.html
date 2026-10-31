@@ -57,8 +57,8 @@
             <input type="text" name="name" placeholder="Filtrar por nome...">
             <select name="companyId">
                 <option value="">Todas as empresas</option>
-                <option value="1">EcoPack Indústria de Embalagens</option>
-                <option value="2">Mercado Boa Compra</option>
+                <option value="1">Empresa Verde Alimentos LTDA</option>
+                <option value="2">Alimentos Sustentáveis Brasil LTDA</option>
             </select>
             <button type="submit">Filtrar</button>
         </form>
@@ -76,6 +76,111 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td>Carlos Silva</td>
+                        <td>carlos.silva@empresa.com</td>
+                        <td>ADMINISTRADOR</td>
+                        <td>Administrador</td>
+                        <td>Empresa Verde Alimentos LTDA</td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=1">Editar</a>
+                            <form method="post" action="../usuario">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="1">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mariana Souza</td>
+                        <td>mariana.souza@empresa.com</td>
+                        <td>FUNCIONARIO</td>
+                        <td>Funcionária</td>
+                        <td>Empresa Verde Alimentos LTDA</td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=2">Editar</a>
+                            <form method="post" action="../usuario">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="2">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>João Oliveira</td>
+                        <td>joao.oliveira@empresa.com</td>
+                        <td>GERENTE</td>
+                        <td>Gerente</td>
+                        <td>Empresa Verde Alimentos LTDA</td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=3">Editar</a>
+                            <form method="post" action="../usuario">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="3">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ana Costa</td>
+                        <td>ana.costa@alimentos.com</td>
+                        <td>ADMINISTRADOR</td>
+                        <td>Administradora</td>
+                        <td>Alimentos Sustentáveis Brasil LTDA</td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=4">Editar</a>
+                            <form method="post" action="../usuario">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="4">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rafael Lima</td>
+                        <td>rafael.lima@reciclasp.org</td>
+                        <td>FUNCIONARIO</td>
+                        <td>Operador de triagem</td>
+                        <td>Cooperativa Recicla São Paulo</td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=5">Editar</a>
+                            <form method="post" action="../usuario">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="5">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Paula Santos</td>
+                        <td>paula.santos@ecofuturo.org</td>
+                        <td>GERENTE</td>
+                        <td>Coordenadora</td>
+                        <td>Cooperativa Eco Futuro</td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=6">Editar</a>
+                            <form method="post" action="../usuario">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="6">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marcos Pereira</td>
+                        <td>marcos.pereira@circularverde.org</td>
+                        <td>FUNCIONARIO</td>
+                        <td>Operador de coleta</td>
+                        <td>Cooperativa Circular Verde</td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=7">Editar</a>
+                            <form method="post" action="../usuario">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="7">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>

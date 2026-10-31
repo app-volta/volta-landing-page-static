@@ -56,13 +56,14 @@
             <input type="hidden" name="action" value="list">
             <select name="companyId">
                 <option value="">Todas as empresas</option>
-                <option value="1">EcoPack Indústria de Embalagens</option>
-                <option value="2">Mercado Boa Compra</option>
+                <option value="1">Empresa Verde Alimentos LTDA</option>
+                <option value="2">Alimentos Sustentáveis Brasil LTDA</option>
             </select>
             <select name="cooperativeId">
                 <option value="">Todas as cooperativas</option>
-                <option value="1">Cooperativa Recicla Zona Leste</option>
-                <option value="2">Coop Verde Sul</option>
+                <option value="1">Cooperativa Recicla São Paulo</option>
+                <option value="2">Cooperativa Eco Futuro</option>
+                <option value="3">Cooperativa Circular Verde</option>
             </select>
             <button type="submit">Filtrar</button>
         </form>
@@ -77,6 +78,7 @@
                     <th>Status</th>
                     <th>Tipo</th>
                     <th>Urgente</th>
+                    <th>Solicitada em</th>
                     <th>Data agendada</th>
                     <th>Alterar status</th>
                     <th>Agendar data</th>
@@ -84,6 +86,142 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td>Empresa Verde Alimentos LTDA</td>
+                        <td>#1</td>
+                        <td>Cooperativa Recicla São Paulo</td>
+                        <td>ACEITA</td>
+                        <td>PADRAO</td>
+                        <td>Sim</td>
+                        <td>2026-09-01T09:00</td>
+                        <td>2026-09-02T09:00</td>
+                        <td>
+                            <form class="form-inline" method="post" action="../coleta">
+                                <input type="hidden" name="action" value="updateStatus">
+                                <input type="hidden" name="id" value="1">
+                                <select name="status" aria-label="Alterar status"><option value="SOLICITADA">Solicitada</option><option value="AGENDADA">Agendada</option><option value="ACEITA" selected>Aceita</option><option value="EM_ANDAMENTO">Em andamento</option><option value="CONCLUIDA">Concluída</option><option value="CANCELADA">Cancelada</option></select>
+                                <button type="submit">Salvar</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form class="form-inline" method="post" action="../coleta">
+                                <input type="hidden" name="action" value="updateScheduledDate">
+                                <input type="hidden" name="id" value="1">
+                                <input type="datetime-local" name="scheduledDate" value="2026-09-02T09:00" aria-label="Agendar data">
+                                <button type="submit">Agendar</button>
+                            </form>
+                        </td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=1">Editar</a>
+                            <form method="post" action="../coleta">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="1">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Empresa Verde Alimentos LTDA</td>
+                        <td>#2</td>
+                        <td>Cooperativa Eco Futuro</td>
+                        <td>AGENDADA</td>
+                        <td>PADRAO</td>
+                        <td>Não</td>
+                        <td>2026-09-02T11:00</td>
+                        <td>2026-09-03T14:00</td>
+                        <td>
+                            <form class="form-inline" method="post" action="../coleta">
+                                <input type="hidden" name="action" value="updateStatus">
+                                <input type="hidden" name="id" value="2">
+                                <select name="status" aria-label="Alterar status"><option value="SOLICITADA">Solicitada</option><option value="AGENDADA" selected>Agendada</option><option value="ACEITA">Aceita</option><option value="EM_ANDAMENTO">Em andamento</option><option value="CONCLUIDA">Concluída</option><option value="CANCELADA">Cancelada</option></select>
+                                <button type="submit">Salvar</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form class="form-inline" method="post" action="../coleta">
+                                <input type="hidden" name="action" value="updateScheduledDate">
+                                <input type="hidden" name="id" value="2">
+                                <input type="datetime-local" name="scheduledDate" value="2026-09-03T14:00" aria-label="Agendar data">
+                                <button type="submit">Agendar</button>
+                            </form>
+                        </td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=2">Editar</a>
+                            <form method="post" action="../coleta">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="2">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Empresa Verde Alimentos LTDA</td>
+                        <td>#3</td>
+                        <td>Cooperativa Circular Verde</td>
+                        <td>CONCLUIDA</td>
+                        <td>PADRAO</td>
+                        <td>Não</td>
+                        <td>2026-09-03T14:30</td>
+                        <td>2026-09-04T09:00</td>
+                        <td>
+                            <form class="form-inline" method="post" action="../coleta">
+                                <input type="hidden" name="action" value="updateStatus">
+                                <input type="hidden" name="id" value="3">
+                                <select name="status" aria-label="Alterar status"><option value="SOLICITADA">Solicitada</option><option value="AGENDADA">Agendada</option><option value="ACEITA">Aceita</option><option value="EM_ANDAMENTO">Em andamento</option><option value="CONCLUIDA" selected>Concluída</option><option value="CANCELADA">Cancelada</option></select>
+                                <button type="submit">Salvar</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form class="form-inline" method="post" action="../coleta">
+                                <input type="hidden" name="action" value="updateScheduledDate">
+                                <input type="hidden" name="id" value="3">
+                                <input type="datetime-local" name="scheduledDate" value="2026-09-04T09:00" aria-label="Agendar data">
+                                <button type="submit">Agendar</button>
+                            </form>
+                        </td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=3">Editar</a>
+                            <form method="post" action="../coleta">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="3">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Empresa Verde Alimentos LTDA</td>
+                        <td>#5</td>
+                        <td>Cooperativa Recicla São Paulo</td>
+                        <td>CONCLUIDA</td>
+                        <td>PADRAO</td>
+                        <td>Não</td>
+                        <td>2026-09-05T09:30</td>
+                        <td>2026-09-06T10:00</td>
+                        <td>
+                            <form class="form-inline" method="post" action="../coleta">
+                                <input type="hidden" name="action" value="updateStatus">
+                                <input type="hidden" name="id" value="4">
+                                <select name="status" aria-label="Alterar status"><option value="SOLICITADA">Solicitada</option><option value="AGENDADA">Agendada</option><option value="ACEITA">Aceita</option><option value="EM_ANDAMENTO">Em andamento</option><option value="CONCLUIDA" selected>Concluída</option><option value="CANCELADA">Cancelada</option></select>
+                                <button type="submit">Salvar</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form class="form-inline" method="post" action="../coleta">
+                                <input type="hidden" name="action" value="updateScheduledDate">
+                                <input type="hidden" name="id" value="4">
+                                <input type="datetime-local" name="scheduledDate" value="2026-09-06T10:00" aria-label="Agendar data">
+                                <button type="submit">Agendar</button>
+                            </form>
+                        </td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=4">Editar</a>
+                            <form method="post" action="../coleta">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="4">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>

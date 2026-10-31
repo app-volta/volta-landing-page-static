@@ -56,8 +56,8 @@
             <input type="hidden" name="action" value="list">
             <select name="companyId">
                 <option value="">Todas as empresas</option>
-                <option value="1">EcoPack Indústria de Embalagens</option>
-                <option value="2">Mercado Boa Compra</option>
+                <option value="1">Empresa Verde Alimentos LTDA</option>
+                <option value="2">Alimentos Sustentáveis Brasil LTDA</option>
             </select>
             <button type="submit">Filtrar</button>
         </form>
@@ -73,6 +73,58 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td>Empresa Verde Alimentos LTDA</td>
+                        <td>Produção</td>
+                        <td>Galpão principal da fábrica</td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=1">Editar</a>
+                            <form method="post" action="../area">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="1">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Empresa Verde Alimentos LTDA</td>
+                        <td>Estoque</td>
+                        <td>Área de armazenamento de embalagens</td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=2">Editar</a>
+                            <form method="post" action="../area">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="2">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Empresa Verde Alimentos LTDA</td>
+                        <td>Expedição</td>
+                        <td>Setor responsável pelo envio dos produtos</td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=3">Editar</a>
+                            <form method="post" action="../area">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="3">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Alimentos Sustentáveis Brasil LTDA</td>
+                        <td>Produção</td>
+                        <td>Unidade de processamento de alimentos</td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=4">Editar</a>
+                            <form method="post" action="../area">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="4">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
