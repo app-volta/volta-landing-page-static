@@ -44,7 +44,7 @@ Requisitos da disciplina e onde cada um está neste repositório.
 | M3 | Entrega pelo GitHub e publicação em hospedagem estática | Este repositório. Link do site publicado: a ser adicionado após a publicação no GitHub Pages |
 | E1 | Responsivo e fiel ao padrão visual e ao protótipo do Figma | Media queries em [docs/css/landing.css](docs/css/landing.css) e [docs/css/app.css](docs/css/app.css); paleta e fonte em [docs/css/base.css](docs/css/base.css) |
 
-**Observação sobre o CRUD.** As telas são feitas apenas com HTML e CSS. Os dados exibidos nas listas são exemplos escritos no próprio HTML. Os formulários enviam os dados por `POST` para servlets (por exemplo, `../empresa`), que fazem parte do back-end Java e não existem no site estático. A integração é feita convertendo as páginas para JSP.
+**Observação sobre o CRUD.** As telas são feitas apenas com HTML e CSS.Os dados exibidos nas listas são exemplos escritos no próprio HTML; o Gustavo Souza os substitui ao ligar as páginas ao back-end. Os formulários enviam os dados por `POST` para servlets (por exemplo, `../empresa`), que fazem parte do back-end Java e não existem no site estático. A integração é feita convertendo as páginas para JSP.
 
 ## Páginas do projeto
 
@@ -133,7 +133,7 @@ Integrantes do 1º ano:
 | --- | --- |
 | Lucca | Front-end |
 | Gustavo Azenha | UX |
-| Gustavo Melo | Back-end |
+| Gustavo Souza | Back-end |
 | Miguel Lapa | Dados |
 
 O 2º ano é responsável pelo aplicativo.
