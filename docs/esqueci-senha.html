@@ -19,14 +19,12 @@
             <a href="index.html">
                 <img id="Logo-VOLTA" src="assets/img/content/Logo_VOLTA.png" alt="Logo do Volta">
             </a>
-            <h1>Criar uma nova senha</h1>
-            <form method="post">
+            <h1>Esqueceu sua senha?</h1>
+            <form method="post" action="esqueci-senha">
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-                <label for="nova-senha">Nova senha:</label>
-                <input type="password" id="nova-senha" class="input-senha" name="nova-senha" placeholder="Nova senha" required>
-
-                <button type="submit">Enviar email de confirmação</button>
+                <input type="email" id="email" name="email" placeholder="Email" required autocomplete="email">
+               
+                <button type="submit">Enviar e-mail de confirmação</button>
                 <p><a href="login.html">Voltar para o login</a></p>
             </form>
         </div>
