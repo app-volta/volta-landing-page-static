@@ -1330,9 +1330,18 @@ p {
   }
 }
 
+.equipe-conteudo:hover .equipe-membros,
+.equipe-conteudo:focus-within .equipe-membros {
+  animation-play-state: paused;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .equipe-membros {
     animation: none;
+  }
+
+  .equipe-conteudo {
+    overflow-x: auto;
   }
 }
 
