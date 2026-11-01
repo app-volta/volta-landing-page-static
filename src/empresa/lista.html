@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cooperativas - Volta</title>
+    <title>Empresas - Volta</title>
     <link rel="icon" href="../assets/img/content/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
@@ -49,33 +49,29 @@
     </nav>
 
     <main class="container lista">
-        <h1>Cooperativas cadastradas</h1>
-        <a class="btn" href="formulario.html">+ Nova cooperativa</a>
+        <h1>Empresas cadastradas</h1>
+        <a class="btn" href="formulario.html">+ Nova empresa</a>
 
         <div class="tabela-responsiva">
             <table>
                 <thead>
                     <tr>
-                    <th>Nome</th>
-                    <th>CNPJ</th>
-                    <th>CEP</th>
-                    <th>Horário de funcionamento</th>
-                    <th>Avaliação média</th>
-                    <th>Capacidade mensal</th>
-                    <th>Ações</th>
+                        <th>Nome</th>
+                        <th>CNPJ</th>
+                        <th>CEP</th>
+                        <th>Endereço</th>
+                        <th>Ações</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Cooperativa Recicla São Paulo</td>
-                        <td>11.222.333/0001-81</td>
+                        <td>Empresa Verde Alimentos LTDA</td>
+                        <td>12.345.678/0001-95</td>
                         <td>01001-000</td>
-                        <td>08:00 - 17:00</td>
-                        <td>4.0</td>
-                        <td>5000</td>
+                        <td>Rua das Indústrias, 1200, São Paulo - SP</td>
                         <td class="acoes">
                             <a class="btn-editar" href="formulario.html?id=1">Editar</a>
-                            <form method="post" action="../cooperativa">
+                            <form method="post" action="../empresa">
                                 <input type="hidden" name="action" value="delete">
                                 <input type="hidden" name="id" value="1">
                                 <button type="submit" class="btn-perigo">Excluir</button>
@@ -83,33 +79,15 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Cooperativa Eco Futuro</td>
-                        <td>44.555.666/0001-72</td>
-                        <td>01310-100</td>
-                        <td>08:30 - 17:30</td>
-                        <td>-</td>
-                        <td>3500</td>
+                        <td>Alimentos Sustentáveis Brasil LTDA</td>
+                        <td>98.765.432/0001-10</td>
+                        <td>01002-000</td>
+                        <td>Avenida Paulista, 850, São Paulo - SP</td>
                         <td class="acoes">
                             <a class="btn-editar" href="formulario.html?id=2">Editar</a>
-                            <form method="post" action="../cooperativa">
+                            <form method="post" action="../empresa">
                                 <input type="hidden" name="action" value="delete">
                                 <input type="hidden" name="id" value="2">
-                                <button type="submit" class="btn-perigo">Excluir</button>
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Cooperativa Circular Verde</td>
-                        <td>77.888.999/0001-63</td>
-                        <td>04038-001</td>
-                        <td>07:30 - 16:30</td>
-                        <td>5.0</td>
-                        <td>4200</td>
-                        <td class="acoes">
-                            <a class="btn-editar" href="formulario.html?id=3">Editar</a>
-                            <form method="post" action="../cooperativa">
-                                <input type="hidden" name="action" value="delete">
-                                <input type="hidden" name="id" value="3">
                                 <button type="submit" class="btn-perigo">Excluir</button>
                             </form>
                         </td>

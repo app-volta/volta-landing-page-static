@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coleta - Volta</title>
+    <title>Usuário - Volta</title>
     <link rel="icon" href="../assets/img/content/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
@@ -49,30 +49,38 @@
     </nav>
 
     <main class="container formulario">
-        <h1>Nova coleta</h1>
-        <form method="post" action="../coleta">
+        <h1>Novo usuário</h1>
+        <form method="post" action="../usuario">
             <input type="hidden" name="action" value="insert">
             <input type="hidden" name="id" value="">
 
-            <label for="incidentId">Ocorrência</label>
-            <select id="incidentId" name="incidentId" required>
-                <option value="">Selecione...</option>
-                <option value="1">#1 - Pendente - EcoPack Indústria de Embalagens</option>
-                <option value="2">#2 - Em análise - Mercado Boa Compra</option>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            <label for="position">Cargo</label>
+            <input type="text" id="position" name="position">
+            <label for="companyId">Empresa (para ADMIN/COMPANY_USER)</label>
+            <select id="companyId" name="companyId">
+                <option value="">Nenhuma</option>
+                <option value="1">EcoPack Indústria de Embalagens</option>
+                <option value="2">Mercado Boa Compra</option>
             </select>
-            <label for="cooperativeId">Cooperativa</label>
-            <select id="cooperativeId" name="cooperativeId" required>
-                <option value="">Selecione...</option>
+            <label for="cooperativeId">Cooperativa (para COOPERATIVE)</label>
+            <select id="cooperativeId" name="cooperativeId">
+                <option value="">Nenhuma</option>
                 <option value="1">Cooperativa Recicla Zona Leste</option>
                 <option value="2">Coop Verde Sul</option>
             </select>
-            <label for="collectionType">Tipo de coleta</label>
-            <input type="text" id="collectionType" name="collectionType">
-            <label for="scheduledDate">Data agendada</label>
-            <input type="datetime-local" id="scheduledDate" name="scheduledDate">
-            <label for="estimatedTime">Tempo estimado</label>
-            <input type="time" id="estimatedTime" name="estimatedTime">
-            <label><input type="checkbox" name="urgent" value="true"> Urgente</label>
+            <label for="roleId">Tipo de usuário</label>
+            <select id="roleId" name="roleId" required>
+                <option value="">Selecione...</option>
+                <option value="1">ADMIN</option>
+                <option value="2">COMPANY_USER</option>
+                <option value="3">COOPERATIVE</option>
+            </select>
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required>
 
             <div class="botoes">
                 <button type="submit" class="btn">Salvar</button>
