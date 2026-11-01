@@ -700,6 +700,7 @@ p {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  padding-bottom: 16px;
 }
 
 .passo {
