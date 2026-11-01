@@ -22,20 +22,19 @@
             </a>
             <h1>Bem-vindo(a)!</h1>
             <h2>Cadastro</h2>
-            <form method="post" action="empresa">
-                <input type="hidden" name="action" value="create">
+            <form method="post" action="cadastro">
                 <label for="name">Nome da empresa:</label>
                 <input type="text" id="name" name="name" placeholder="Nome da Empresa" required>
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                <input type="email" id="email" name="email" placeholder="E-mail" required autocomplete="email">
                 <label for="cnpj">CNPJ:</label>
                 <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ" inputmode="numeric" maxlength="18" required>
                 <label for="cep">CEP:</label>
-                <input type="text" id="cep" name="cep" placeholder="CEP" inputmode="numeric" maxlength="9" required>
+                <input type="text" id="cep" name="cep" placeholder="CEP" inputmode="numeric" maxlength="9" required autocomplete="postal-code">
                 <label for="senha">Senha:</label>
-                <input type="password" id="senha" class="input-senha" name="senha" placeholder="Senha" required>
+                <input type="password" id="senha" class="input-senha" name="password" placeholder="Senha" required autocomplete="new-password">
                 <label for="confirmar-senha">Confirmar Senha:</label>
-                <input type="password" id="confirmar-senha" class="input-senha" name="confirmar-senha" placeholder="Confirmar Senha" required>
+                <input type="password" id="confirmar-senha" class="input-senha" name="confirmPassword" placeholder="Confirmar Senha" required autocomplete="new-password">
                 <button type="submit">Cadastre-se</button>
                 <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
             </form>
