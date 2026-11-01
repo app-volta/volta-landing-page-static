@@ -240,7 +240,7 @@ p {
 .hero-inicio {
   min-height: 100vh;
   aspect-ratio: 1443 / 917;
-  max-width: 100vw;
+  max-width: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -885,19 +885,13 @@ p {
 =========================== */
 #dashboard {
   background-color: var(--verde-gelo);
-  width: 100vw;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
 
 #dashboard h2 {
-  background: linear-gradient(
-    180deg,
-    var(--verde-principal),
-    var(--verde-escuro)
-  );
-  -webkit-background-clip: text; /* Recorta o fundo no formato das letras */
-  -webkit-text-fill-color: transparent; /* Torna a cor original do texto transparente para o degradê aparecer */
+  color: var(--verde-medio);
   display: block;
   margin-bottom: 32px;
   margin-left: 40px;
@@ -918,7 +912,7 @@ p {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100vw;
+  width: 100%;
   height: 100%;
   z-index: 0;
 }
@@ -1330,9 +1324,18 @@ p {
   }
 }
 
+.equipe-conteudo:hover .equipe-membros,
+.equipe-conteudo:focus-within .equipe-membros {
+  animation-play-state: paused;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .equipe-membros {
     animation: none;
+  }
+
+  .equipe-conteudo {
+    overflow-x: auto;
   }
 }
 
