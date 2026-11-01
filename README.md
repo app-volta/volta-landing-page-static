@@ -39,10 +39,10 @@ Requisitos da disciplina e onde cada um está neste repositório.
 
 | Requisito | Descrição | Onde está |
 | --- | --- | --- |
-| M1 | Landing page com informações do projeto | [src/index.html](src/index.html), [src/css/landing.css](src/css/landing.css) e [src/js/landing.js](src/js/landing.js) |
+| M1 | Landing page com informações do projeto | [src/index.html](src/index.html), [src/assets/css/landing.css](src/assets/css/landing.css) e [src/assets/js/landing.js](src/assets/js/landing.js) |
 | M2 | Telas web do CRUD: cadastro, consulta/listagem, edição e exclusão | Pastas `empresa`, `cooperativa`, `area`, `ocorrencia`, `coleta` e `usuario` em [src](src), cada uma com `lista.html` e `formulario.html` |
 | M3 | Entrega pelo GitHub e publicação em hospedagem estática | Este repositório. Link do site publicado: a ser adicionado após a publicação no GitHub Pages |
-| E1 | Responsivo e fiel ao padrão visual e ao protótipo do Figma | Media queries em [src/css/landing.css](src/css/landing.css) e [src/css/app.css](src/css/app.css); paleta e fonte em [src/css/base.css](src/css/base.css) |
+| E1 | Responsivo e fiel ao padrão visual e ao protótipo do Figma | Media queries em [src/assets/css/landing.css](src/assets/css/landing.css) e [src/assets/css/app.css](src/assets/css/app.css); paleta e fonte em [src/assets/css/base.css](src/assets/css/base.css) |
 
 **Observação sobre o CRUD.** As telas são feitas apenas com HTML e CSS. Os dados exibidos nas listas são exemplos escritos no próprio HTML; o Gustavo Souza os substitui ao ligar as páginas ao back-end. Os formulários enviam os dados por `POST` para servlets (por exemplo, `../empresa`), que fazem parte do back-end Java e não existem no site estático. A integração é feita convertendo as páginas para JSP.
 
@@ -82,15 +82,15 @@ volta-landing-page-static/
     ├── login.html
     ├── cadastrar.html
     ├── esqueci-senha.html
-    ├── css/
-    │   ├── base.css
-    │   ├── landing.css
-    │   ├── login-cadastrar.css
-    │   └── app.css
-    ├── js/
-    │   ├── landing.js
-    │   └── cadastrar.js
     ├── assets/
+    │   ├── css/
+    │   │   ├── base.css
+    │   │   ├── landing.css
+    │   │   ├── login-cadastrar.css
+    │   │   └── app.css
+    │   ├── js/
+    │   │   ├── landing.js
+    │   │   └── cadastrar.js
     │   └── img/
     └── empresa/  cooperativa/  area/  ocorrencia/  coleta/  usuario/
         ├── lista.html
@@ -120,7 +120,7 @@ Link do site publicado: a ser adicionado.
 ## Identidade visual
 
 - Transmite sustentabilidade, conexão, organização, confiança e profissionalismo.
-- Somente tons de verde, definidos como variáveis em [src/css/base.css](src/css/base.css).
+- Somente tons de verde, definidos como variáveis em [src/assets/css/base.css](src/assets/css/base.css).
 - Fonte: Belanosima.
 - Logo: letra V com símbolo circular de retorno e reciclagem.
 - Mascote: Voltinha, uma seta verde com carinha.

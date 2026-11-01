@@ -21,7 +21,7 @@ body {
 .lado-imagem{
   flex: 1;
   position: relative;
-  background: url("../assets/img/backgrounds/fundo_login.jpg") center / cover no-repeat;
+  background: url("../img/backgrounds/fundo_login.jpg") center / cover no-repeat;
 }
 
 .content{
