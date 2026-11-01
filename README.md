@@ -41,7 +41,7 @@ Requisitos da disciplina e onde cada um está neste repositório.
 | --- | --- | --- |
 | M1 | Landing page com informações do projeto | [src/index.html](src/index.html), [src/assets/css/landing.css](src/assets/css/landing.css) e [src/assets/js/landing.js](src/assets/js/landing.js) |
 | M2 | Telas web do CRUD: cadastro, consulta/listagem, edição e exclusão | Pastas `empresa`, `cooperativa`, `area`, `ocorrencia`, `coleta` e `usuario` em [src](src), cada uma com `lista.html` e `formulario.html` |
-| M3 | Entrega pelo GitHub e publicação em hospedagem estática | Este repositório. Link do site publicado: a ser adicionado após a publicação no GitHub Pages |
+| M3 | Entrega pelo GitHub e publicação em hospedagem estática | Este repositório. Site publicado: [https://app-volta.github.io/volta-landing-page-static/src/](https://app-volta.github.io/volta-landing-page-static/src/) |
 | E1 | Responsivo e fiel ao padrão visual e ao protótipo do Figma | Media queries em [src/assets/css/landing.css](src/assets/css/landing.css) e [src/assets/css/app.css](src/assets/css/app.css); paleta e fonte em [src/assets/css/base.css](src/assets/css/base.css) |
 
 **Observação sobre o CRUD.** As telas são feitas apenas com HTML e CSS. Os dados exibidos nas listas são exemplos escritos no próprio HTML; o Gustavo Souza os substitui ao ligar as páginas ao back-end. Os formulários enviam os dados por `POST` para servlets (por exemplo, `../empresa`), que fazem parte do back-end Java e não existem no site estático. A integração é feita convertendo as páginas para JSP.
@@ -113,9 +113,9 @@ Para evitar problemas de caminhos relativos, abra os arquivos sempre a partir da
 
 ## Publicação
 
-O site é publicado com GitHub Pages a partir da pasta `src`.
+O site é publicado com GitHub Pages, e a landing page fica na pasta `src`.
 
-Link do site publicado: a ser adicionado.
+Link do site publicado: [https://app-volta.github.io/volta-landing-page-static/src/](https://app-volta.github.io/volta-landing-page-static/src/)
 
 ## Identidade visual
 
