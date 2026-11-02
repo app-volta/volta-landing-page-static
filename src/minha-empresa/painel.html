@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da empresa - Volta</title>
+    <link rel="icon" href="../assets/img/content/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+</head>
+<body>
+
+    <nav class="nav">
+      <div class="menu">
+        <input type="checkbox" id="menu-toggle" />
+
+        <div class="nav-logo">
+          <a href="painel.html">
+            <img src="../assets/img/content/Logo_VOLTA_branco.png" alt="VOLTA Logo" />
+          </a>
+
+          <label
+            for="menu-toggle"
+            class="material-symbols-outlined"
+            >menu</label
+          >
+        </div>
+
+        <div class="nav-links">
+            <a class="link-pagina" href="painel.html">Painel</a>
+            <a class="link-pagina" href="unidade/lista.html">Unidades</a>
+            <a class="link-pagina" href="funcionario/lista.html">Funcionários</a>
+            <a class="link-pagina" href="ocorrencia/lista.html">Ocorrências</a>
+            <a class="link-pagina" href="coleta/lista.html">Coletas</a>
+          <span class="usuario-logado">Nome da empresa</span>
+          <form class="form-sair" method="get" action="../login.html">
+            <button type="submit" class="btn-sair">Sair</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container painel">
+        <h1 class="painel-titulo"><span>Minha empresa</span></h1>
+        <div class="cards">
+                <a class="card" href="unidade/lista.html">
+                    <span class="nome">Unidades</span>
+                </a>
+                <a class="card" href="funcionario/lista.html">
+                    <span class="nome">Funcionários</span>
+                </a>
+                <a class="card" href="ocorrencia/lista.html">
+                    <span class="nome">Ocorrências</span>
+                </a>
+                <a class="card" href="coleta/lista.html">
+                    <span class="nome">Coletas</span>
+                </a>
+        </div>
+    </main>
+
+</body>
+</html>

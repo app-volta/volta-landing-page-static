@@ -503,3 +503,13 @@ input[type="checkbox"]{
   font-weight: normal;
   color: var(--cinza-texto);
 }
+
+.sem-resultado{
+  margin: 24px 0;
+  padding: 24px;
+  text-align: center;
+  color: var(--cinza-texto);
+  background-color: var(--verde-gelo);
+  border: 1px dashed var(--verde-medio);
+  border-radius: 6px;
+}
