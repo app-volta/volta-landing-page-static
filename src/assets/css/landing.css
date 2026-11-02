@@ -135,6 +135,7 @@ p {
 }
 
 #link-login {
+  margin-left: auto;
   padding: 10px 16px;
   color: var(--branco);
   background-color: var(--verde-petroleo);
