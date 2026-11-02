@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocorrência - Volta</title>
+    <link rel="icon" href="../../assets/img/content/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+</head>
+<body>
+
+    <nav class="nav">
+      <div class="menu">
+        <input type="checkbox" id="menu-toggle" />
+
+        <div class="nav-logo">
+          <a href="../painel.html">
+            <img src="../../assets/img/content/Logo_VOLTA_branco.png" alt="VOLTA Logo" />
+          </a>
+
+          <label
+            for="menu-toggle"
+            class="material-symbols-outlined"
+            >menu</label
+          >
+        </div>
+
+        <div class="nav-links">
+            <a class="link-pagina" href="../painel.html">Painel</a>
+            <a class="link-pagina" href="../unidade/lista.html">Unidades</a>
+            <a class="link-pagina" href="../funcionario/lista.html">Funcionários</a>
+            <a class="link-pagina" href="../ocorrencia/lista.html">Ocorrências</a>
+            <a class="link-pagina" href="../coleta/lista.html">Coletas</a>
+          <span class="usuario-logado">Nome da empresa</span>
+          <form class="form-sair" method="get" action="../../login.html">
+            <button type="submit" class="btn-sair">Sair</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container formulario">
+        <h1>Nova ocorrência</h1>
+        <form method="post" action="../../ocorrencia">
+            <input type="hidden" name="action" value="insert">
+            <input type="hidden" name="id" value="">
+
+            <label for="companyName">Empresa</label>
+            <input type="text" id="companyName" value="EcoPack Indústria de Embalagens" disabled>
+            <input type="hidden" name="companyId" value="1">
+            <label for="userId">Usuário</label>
+            <select id="userId" name="userId" required>
+                <option value="">Selecione...</option>
+                <option value="1">Maria Souza</option>
+                <option value="2">João Lima</option>
+            </select>
+            <label for="areaId">Área</label>
+            <select id="areaId" name="areaId" required>
+                <option value="">Selecione...</option>
+                <option value="1">Produção</option>
+                <option value="2">Estoque</option>
+            </select>
+            <label for="wasteTypeId">Tipo de resíduo</label>
+            <select id="wasteTypeId" name="wasteTypeId" required>
+                <option value="">Selecione...</option>
+                <option value="1">Plástico PET</option>
+                <option value="2">Plástico PEAD</option>
+                <option value="3">Plástico PP</option>
+                <option value="4">Plástico PVC</option>
+            </select>
+            <label for="priority">Prioridade</label>
+            <select id="priority" name="priority" required>
+                <option value="BAIXA">Baixa</option>
+                <option value="MEDIA" selected>Média</option>
+                <option value="ALTA">Alta</option>
+                <option value="URGENTE">Urgente</option>
+            </select>
+            <label for="contaminationLevel">Nível de contaminação</label>
+            <select id="contaminationLevel" name="contaminationLevel">
+                <option value="">Não informado</option>
+                <option value="BAIXO">Baixo</option>
+                <option value="MEDIO">Médio</option>
+                <option value="ALTO">Alto</option>
+            </select>
+            <label for="photoUrl">URL da foto</label>
+            <input type="text" id="photoUrl" name="photoUrl">
+            <label for="employeeDescription">Descrição do funcionário</label>
+            <input type="text" id="employeeDescription" name="employeeDescription">
+            <label for="estimatedWeight">Peso estimado (kg)</label>
+            <input type="number" id="estimatedWeight" name="estimatedWeight" step="any">
+
+            <div class="botoes">
+                <button type="submit" class="btn">Salvar</button>
+                <a class="btn btn-secundario" href="lista.html">Cancelar</a>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

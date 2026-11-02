@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleta - Volta</title>
+    <link rel="icon" href="../../assets/img/content/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+</head>
+<body>
+
+    <nav class="nav">
+      <div class="menu">
+        <input type="checkbox" id="menu-toggle" />
+
+        <div class="nav-logo">
+          <a href="../painel.html">
+            <img src="../../assets/img/content/Logo_VOLTA_branco.png" alt="VOLTA Logo" />
+          </a>
+
+          <label
+            for="menu-toggle"
+            class="material-symbols-outlined"
+            >menu</label
+          >
+        </div>
+
+        <div class="nav-links">
+            <a class="link-pagina" href="../painel.html">Painel</a>
+            <a class="link-pagina" href="../unidade/lista.html">Unidades</a>
+            <a class="link-pagina" href="../funcionario/lista.html">Funcionários</a>
+            <a class="link-pagina" href="../ocorrencia/lista.html">Ocorrências</a>
+            <a class="link-pagina" href="../coleta/lista.html">Coletas</a>
+          <span class="usuario-logado">Nome da empresa</span>
+          <form class="form-sair" method="get" action="../../login.html">
+            <button type="submit" class="btn-sair">Sair</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container formulario">
+        <h1>Nova coleta</h1>
+        <form method="post" action="../../coleta">
+            <input type="hidden" name="action" value="insert">
+            <input type="hidden" name="id" value="">
+
+            <label for="incidentId">Ocorrência</label>
+            <select id="incidentId" name="incidentId" required>
+                <option value="">Selecione...</option>
+                <option value="1">#1 - Pendente - EcoPack Indústria de Embalagens</option>
+                <option value="2">#2 - Em análise - Mercado Boa Compra</option>
+            </select>
+            <label for="cooperativeId">Cooperativa</label>
+            <select id="cooperativeId" name="cooperativeId" required>
+                <option value="">Selecione...</option>
+                <option value="1">Cooperativa Recicla Zona Leste</option>
+                <option value="2">Coop Verde Sul</option>
+            </select>
+            <label for="collectionType">Tipo de coleta</label>
+            <input type="text" id="collectionType" name="collectionType">
+            <label for="scheduledDate">Data agendada</label>
+            <input type="datetime-local" id="scheduledDate" name="scheduledDate">
+            <label for="estimatedTime">Tempo estimado</label>
+            <input type="time" id="estimatedTime" name="estimatedTime">
+            <label><input type="checkbox" name="urgent" value="true"> Urgente</label>
+
+            <div class="botoes">
+                <button type="submit" class="btn">Salvar</button>
+                <a class="btn btn-secundario" href="lista.html">Cancelar</a>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>
