@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel - Volta</title>
+    <link rel="icon" href="assets/img/content/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+</head>
+<body>
+
+    <nav class="nav">
+      <div class="menu">
+        <input type="checkbox" id="menu-toggle" />
+
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="assets/img/content/Logo_VOLTA_branco.png" alt="VOLTA Logo" />
+          </a>
+
+          <label
+            for="menu-toggle"
+            class="material-symbols-outlined"
+            >menu</label
+          >
+        </div>
+
+        <div class="nav-links">
+            <a class="link-pagina" href="painel.html">Painel</a>
+            <a class="link-pagina" href="empresa/lista.html">Empresas</a>
+            <a class="link-pagina" href="cooperativa/lista.html">Cooperativas</a>
+            <a class="link-pagina" href="area/lista.html">Áreas</a>
+            <a class="link-pagina" href="ocorrencia/lista.html">Ocorrências</a>
+            <a class="link-pagina" href="coleta/lista.html">Coletas</a>
+            <a class="link-pagina" href="usuario/lista.html">Usuários</a>
+            <a class="link-pagina" href="perfil/lista.html">Perfis de acesso</a>
+            <a class="link-pagina" href="tipo-residuo/lista.html">Tipos de resíduo</a>
+          <span class="usuario-logado">Nome do usuário</span>
+          <form class="form-sair" method="get" action="area-restrita.html">
+            <button type="submit" class="btn-sair">Sair</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container painel">
+        <h1 class="painel-titulo"><span>Operação</span></h1>
+        <div class="cards">
+                <a class="card" href="empresa/lista.html">
+                    <span class="nome">Empresas</span>
+                    <span class="num">2<span>Cadastradas</span></span>
+                </a>
+                <a class="card" href="cooperativa/lista.html">
+                    <span class="nome">Cooperativas</span>
+                    <span class="num">3<span>Cadastradas</span></span>
+                </a>
+                <a class="card" href="area/lista.html">
+                    <span class="nome">Áreas</span>
+                    <span class="num">4<span>Cadastradas</span></span>
+                </a>
+                <a class="card" href="ocorrencia/lista.html">
+                    <span class="nome">Ocorrências</span>
+                    <span class="num">5<span>Cadastradas</span></span>
+                </a>
+                <a class="card" href="coleta/lista.html">
+                    <span class="nome">Coletas</span>
+                    <span class="num">4<span>Cadastradas</span></span>
+                </a>
+        </div>
+
+        <h1 class="painel-titulo"><span>Acesso</span></h1>
+        <div class="cards">
+                <a class="card" href="usuario/lista.html">
+                    <span class="nome">Usuários</span>
+                    <span class="num">7<span>Cadastrados</span></span>
+                </a>
+                <a class="card" href="tipo-residuo/lista.html">
+                    <span class="nome">Tipos de resíduo</span>
+                    <span class="num">4<span>Cadastrados</span></span>
+                </a>
+                <a class="card" href="perfil/lista.html">
+                    <span class="nome">Perfis de acesso</span>
+                    <span class="num">7<span>Cadastrados</span></span>
+                </a>
+        </div>
+    </main>
+
+</body>
+</html>
