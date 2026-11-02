@@ -63,7 +63,7 @@ Requisitos da disciplina e onde cada um está neste repositório.
 | Requisito | Descrição | Onde está |
 |:---:|---|---|
 | **M1** | Landing page com informações do projeto | [index.html](src/index.html), [landing.css](src/assets/css/landing.css) e [landing.js](src/assets/js/landing.js) |
-| **M2** | Telas web do CRUD: cadastro, consulta/listagem, edição e exclusão | Pastas `empresa`, `cooperativa`, `area`, `ocorrencia`, `coleta`, `usuario`, `perfil` e `tipo-residuo` em [src](src), cada uma com `lista.html` e `formulario.html`, mais o [painel.html](src/painel.html) |
+| **M2** | Telas web do CRUD: cadastro, consulta/listagem, edição e exclusão | Pastas `empresa`, `cooperativa`, `area`, `ocorrencia`, `coleta`, `usuario`, `perfil` e `tipo-residuo` em [src](src), cada uma com `lista.html` e `formulario.html`, mais o [painel.html](src/painel.html). A área da empresa fica em [src/minha-empresa](src/minha-empresa) |
 | **M3** | Entrega pelo GitHub e publicação em hospedagem estática | Este repositório. Site publicado: [app-volta.github.io/volta-landing-page-static/src](https://app-volta.github.io/volta-landing-page-static/src/) |
 | **E1** | Responsivo e fiel ao padrão visual e ao protótipo do Figma | Media queries em [landing.css](src/assets/css/landing.css) e [app.css](src/assets/css/app.css); paleta e fonte em [base.css](src/assets/css/base.css) |
 
@@ -77,7 +77,8 @@ Requisitos da disciplina e onde cada um está neste repositório.
 | Login | [src/login.html](src/login.html) |
 | Cadastro | [src/cadastrar.html](src/cadastrar.html) |
 | Área restrita (admin do VOLTA) | [src/area-restrita.html](src/area-restrita.html) |
-| Painel | [src/painel.html](src/painel.html) |
+| Painel do admin | [src/painel.html](src/painel.html) |
+| Painel da empresa (unidades, funcionários, ocorrências e coletas) | [src/minha-empresa](src/minha-empresa) |
 | Esqueci minha senha | [src/esqueci-senha.html](src/esqueci-senha.html) |
 | Empresas | [src/empresa](src/empresa) |
 | Cooperativas | [src/cooperativa](src/cooperativa) |
@@ -132,6 +133,7 @@ volta-landing-page-static/
     ├── login.html
     ├── area-restrita.html
     ├── painel.html
+    ├── minha-empresa/  (painel.html, unidade/, funcionario/, ocorrencia/, coleta/)
     ├── cadastrar.html
     ├── esqueci-senha.html
     ├── assets/
