@@ -67,7 +67,7 @@ Requisitos da disciplina e onde cada um está neste repositório.
 | **M3** | Entrega pelo GitHub e publicação em hospedagem estática | Este repositório. Site publicado: [app-volta.github.io/volta-landing-page-static/src](https://app-volta.github.io/volta-landing-page-static/src/) |
 | **E1** | Responsivo e fiel ao padrão visual e ao protótipo do Figma | Media queries em [landing.css](src/assets/css/landing.css) e [app.css](src/assets/css/app.css); paleta e fonte em [base.css](src/assets/css/base.css) |
 
-**Observação sobre o CRUD.** As telas são feitas apenas com HTML e CSS. Os dados exibidos nas listas são exemplos escritos no próprio HTML; o Gustavo Souza os substitui ao ligar as páginas ao back-end. Os formulários enviam os dados por `POST` para servlets (por exemplo, `../empresa`), que fazem parte do back-end Java e não existem no site estático. A integração é feita convertendo as páginas para JSP.
+**Observação sobre o CRUD.** As telas são feitas apenas com HTML e CSS. Os dados exibidos nas listas são exemplos escritos no próprio HTML; o Gustavo Souza os substitui ao ligar as páginas ao back-end. Os formulários enviam os dados por `POST` para servlets (por exemplo, `../empresa`), que fazem parte do back-end Java e não existem no site estático. A integração é feita convertendo as páginas para JSP. O back-end Java está no repositório [volta-landing-page-server](https://github.com/app-volta/volta-landing-page-server).
 
 ## 🌐 Páginas do projeto
 
@@ -194,7 +194,7 @@ Transmite sustentabilidade, conexão, organização, confiança e profissionalis
 
 <table align="center">
   <tr>
-    <td align="center"><a href="https://github.com/ldb2010chefinho"><img src="src/assets/img/time/Lucca_Davi_Begliomini.png" width="110" alt="Lucca"/><br/><b>Lucca</b></a><br/><sub>Front-end</sub><br/><img src="https://img.shields.io/badge/HTML-0F684B?style=flat-square&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS-0F684B?style=flat-square&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/JS-0F684B?style=flat-square&logo=javascript&logoColor=white"/></td>
+    <td align="center"><a href="https://github.com/ldb2010"><img src="src/assets/img/time/Lucca_Davi_Begliomini.png" width="110" alt="Lucca"/><br/><b>Lucca</b></a><br/><sub>Front-end</sub><br/><img src="https://img.shields.io/badge/HTML-0F684B?style=flat-square&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS-0F684B?style=flat-square&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/JS-0F684B?style=flat-square&logo=javascript&logoColor=white"/></td>
     <td align="center"><a href="https://github.com/GustavoA-byte"><img src="src/assets/img/time/gustavo_azenha.png" width="110" alt="Gustavo Azenha"/><br/><b>Gustavo Azenha</b></a><br/><sub>UX</sub><br/><img src="https://img.shields.io/badge/Figma-0F684B?style=flat-square&logo=figma&logoColor=white"/></td>
     <td align="center"><a href="https://github.com/Gustavo031210"><img src="src/assets/img/time/gustavo_souza.png" width="110" alt="Gustavo Souza"/><br/><b>Gustavo Souza</b></a><br/><sub>Back-end</sub><br/><img src="https://img.shields.io/badge/Java-0F684B?style=flat-square&logo=openjdk&logoColor=white"/></td>
     <td align="center"><a href="https://github.com/miguellapa25"><img src="src/assets/img/time/miguel_lapa.png" width="110" alt="Miguel Lapa"/><br/><b>Miguel Lapa</b></a><br/><sub>Dados</sub><br/><img src="https://img.shields.io/badge/SQL-0F684B?style=flat-square&logo=postgresql&logoColor=white"/></td>
