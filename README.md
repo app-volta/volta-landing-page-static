@@ -63,7 +63,7 @@ Requisitos da disciplina e onde cada um está neste repositório.
 | Requisito | Descrição | Onde está |
 |:---:|---|---|
 | **M1** | Landing page com informações do projeto | [index.html](src/index.html), [landing.css](src/assets/css/landing.css) e [landing.js](src/assets/js/landing.js) |
-| **M2** | Telas web do CRUD: cadastro, consulta/listagem, edição e exclusão | Pastas `empresa`, `cooperativa`, `area`, `ocorrencia`, `coleta` e `usuario` em [src](src), cada uma com `lista.html` e `formulario.html` |
+| **M2** | Telas web do CRUD: cadastro, consulta/listagem, edição e exclusão | Pastas `empresa`, `cooperativa`, `area`, `ocorrencia`, `coleta`, `usuario`, `perfil` e `tipo-residuo` em [src](src), cada uma com `lista.html` e `formulario.html`, mais o [painel.html](src/painel.html) |
 | **M3** | Entrega pelo GitHub e publicação em hospedagem estática | Este repositório. Site publicado: [app-volta.github.io/volta-landing-page-static/src](https://app-volta.github.io/volta-landing-page-static/src/) |
 | **E1** | Responsivo e fiel ao padrão visual e ao protótipo do Figma | Media queries em [landing.css](src/assets/css/landing.css) e [app.css](src/assets/css/app.css); paleta e fonte em [base.css](src/assets/css/base.css) |
 
@@ -76,6 +76,8 @@ Requisitos da disciplina e onde cada um está neste repositório.
 | Landing page | [src/index.html](src/index.html) ([abrir no site](https://app-volta.github.io/volta-landing-page-static/src/)) |
 | Login | [src/login.html](src/login.html) |
 | Cadastro | [src/cadastrar.html](src/cadastrar.html) |
+| Área restrita (admin do VOLTA) | [src/area-restrita.html](src/area-restrita.html) |
+| Painel | [src/painel.html](src/painel.html) |
 | Esqueci minha senha | [src/esqueci-senha.html](src/esqueci-senha.html) |
 | Empresas | [src/empresa](src/empresa) |
 | Cooperativas | [src/cooperativa](src/cooperativa) |
@@ -83,6 +85,8 @@ Requisitos da disciplina e onde cada um está neste repositório.
 | Ocorrências | [src/ocorrencia](src/ocorrencia) |
 | Coletas | [src/coleta](src/coleta) |
 | Usuários | [src/usuario](src/usuario) |
+| Perfis de acesso | [src/perfil](src/perfil) |
+| Tipos de resíduo | [src/tipo-residuo](src/tipo-residuo) |
 
 **Seções da landing page:** Início, O que é o VOLTA, Como funciona (empresas e cooperativas), Dashboards, Nosso objetivo, Voltinha (mascote), Nossa equipe e rodapé.
 
@@ -126,6 +130,8 @@ volta-landing-page-static/
 └── src/
     ├── index.html
     ├── login.html
+    ├── area-restrita.html
+    ├── painel.html
     ├── cadastrar.html
     ├── esqueci-senha.html
     ├── assets/
@@ -138,7 +144,7 @@ volta-landing-page-static/
     │   │   ├── landing.js
     │   │   └── cadastrar.js
     │   └── img/
-    └── empresa/  cooperativa/  area/  ocorrencia/  coleta/  usuario/
+    └── empresa/  cooperativa/  area/  ocorrencia/  coleta/  usuario/  perfil/  tipo-residuo/
         ├── lista.html
         └── formulario.html
 ```
