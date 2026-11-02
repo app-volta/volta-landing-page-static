@@ -136,8 +136,7 @@ volta-landing-page-static/
     │   │   └── app.css
     │   ├── js/
     │   │   ├── landing.js
-    │   │   ├── cadastrar.js
-    │   │   └── main.js
+    │   │   └── cadastrar.js
     │   └── img/
     └── empresa/  cooperativa/  area/  ocorrencia/  coleta/  usuario/
         ├── lista.html
