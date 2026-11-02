@@ -148,6 +148,20 @@ p {
   background-color: var(--verde-escuro);
 }
 
+#link-cadastro {
+  margin-left: 10px;
+  padding: 8px 16px;
+  color: var(--verde-petroleo);
+  border: 2px solid var(--verde-petroleo);
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+#link-cadastro:hover {
+  color: var(--branco);
+  background-color: var(--verde-petroleo);
+}
+
 @media screen and (min-width: 1143px) {
   .menu .nav-links {
     position: absolute;
@@ -184,14 +198,16 @@ p {
     margin-right: auto;
   }
 
-  #link-login {
+  #link-login,
+  #link-cadastro {
     order: 5;
     display: none;
     white-space: nowrap;
     margin: 0 auto 15px;
   }
 
-  #menu-toggle:checked ~ #link-login {
+  #menu-toggle:checked ~ #link-login,
+  #menu-toggle:checked ~ #link-cadastro {
     display: block;
   }
 

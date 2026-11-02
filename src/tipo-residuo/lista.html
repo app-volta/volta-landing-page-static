@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de resíduo - Volta</title>
+    <link rel="icon" href="../assets/img/content/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+</head>
+<body>
+
+    <nav class="nav">
+      <div class="menu">
+        <input type="checkbox" id="menu-toggle" />
+
+        <div class="nav-logo">
+          <a href="../index.html">
+            <img src="../assets/img/content/Logo_VOLTA_branco.png" alt="VOLTA Logo" />
+          </a>
+
+          <label
+            for="menu-toggle"
+            class="material-symbols-outlined"
+            >menu</label
+          >
+        </div>
+
+        <div class="nav-links">
+            <a class="link-pagina" href="../painel.html">Painel</a>
+            <a class="link-pagina" href="../empresa/lista.html">Empresas</a>
+            <a class="link-pagina" href="../cooperativa/lista.html">Cooperativas</a>
+            <a class="link-pagina" href="../area/lista.html">Áreas</a>
+            <a class="link-pagina" href="../ocorrencia/lista.html">Ocorrências</a>
+            <a class="link-pagina" href="../coleta/lista.html">Coletas</a>
+            <a class="link-pagina" href="../usuario/lista.html">Usuários</a>
+            <a class="link-pagina" href="../perfil/lista.html">Perfis de acesso</a>
+            <a class="link-pagina" href="../tipo-residuo/lista.html">Tipos de resíduo</a>
+          <span class="usuario-logado">Nome do usuário</span>
+          <form class="form-sair" method="get" action="../area-restrita.html">
+            <button type="submit" class="btn-sair">Sair</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container lista">
+        <h1>Tipos de resíduo</h1>
+        <a class="btn" href="formulario.html">+ Novo tipo</a>
+
+        <form class="form-inline" method="get" action="../tipo-residuo">
+            <input type="hidden" name="action" value="list">
+            <input type="text" name="category" maxlength="100" placeholder="Categoria...">
+            <input type="text" name="description" maxlength="255" placeholder="Descrição...">
+            <select name="defaultRisk">
+                <option value="">Todos os riscos</option>
+                <option value="BAIXO">BAIXO</option>
+                <option value="MEDIO">MEDIO</option>
+                <option value="ALTO">ALTO</option>
+            </select>
+            <button type="submit">Filtrar</button>
+        </form>
+
+        <div class="tabela-responsiva">
+            <table>
+                <thead>
+                    <tr>
+                    <th>Categoria</th>
+                    <th>Descrição</th>
+                    <th>Risco padrão</th>
+                    <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Plástico</td>
+                        <td>Embalagens plásticas utilizadas nos produtos</td>
+                        <td>MEDIO</td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=1">Editar</a>
+                            <form method="post" action="../tipo-residuo">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="1">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Papelão</td>
+                        <td>Caixas e embalagens de papelão</td>
+                        <td>BAIXO</td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=2">Editar</a>
+                            <form method="post" action="../tipo-residuo">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="2">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Metal</td>
+                        <td>Latas e materiais metálicos</td>
+                        <td>MEDIO</td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=3">Editar</a>
+                            <form method="post" action="../tipo-residuo">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="3">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Resíduo Contaminado</td>
+                        <td>Materiais contaminados que precisam de tratamento</td>
+                        <td>ALTO</td>
+                        <td class="acoes">
+                            <a class="btn-editar" href="formulario.html?id=4">Editar</a>
+                            <form method="post" action="../tipo-residuo">
+                                <input type="hidden" name="action" value="delete">
+                                <input type="hidden" name="id" value="4">
+                                <button type="submit" class="btn-perigo">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+</html>

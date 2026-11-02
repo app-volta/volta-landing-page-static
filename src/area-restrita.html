@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="html-login">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/content/logo.png" type="image/x-icon">
+    <title>Volta - área restrita</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/login-cadastrar.css">
+    <!--Fonte Belanosima-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div class="lado-imagem" aria-hidden="true"></div>
+        <div class="content">
+            <a href="index.html">
+                <img id="Logo-VOLTA" src="assets/img/content/Logo_VOLTA.png" alt="Logo do Volta">
+            </a>
+            <h1>Área restrita</h1>
+            <h2>Acesso administrativo</h2>
+            <form method="get" action="painel.html">
+                <label for="email">E-mail:</label>
+                <input name="email" type="email" id="email" placeholder="E-mail" required autocomplete="email">
+                <label for="senha">Senha:</label>
+                <input name="password" type="password" id="senha" class="input-senha" placeholder="Senha" required autocomplete="current-password">
+
+                <button type="submit">Entrar</button>
+                <p><a href="login.html">Voltar ao login das empresas</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
